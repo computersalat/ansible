@@ -298,7 +298,7 @@ CPE_NAME="cpe:/o:suse:sles:11:4"
         }
     },
     {  # see https://github.com/ansible/ansible/issues/14837
-        "name": "SLES 12 SP0",
+        "name": "SLES 12 GA",
         "input": {
             "/etc/os-release":
             """
