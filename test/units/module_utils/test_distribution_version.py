@@ -159,6 +159,38 @@ CODENAME = Malachite
         }
     },
     {
+        "name" : "openSUSE Leap 42.2",
+        "input": {
+            "/etc/os-release":
+            """
+NAME="openSUSE Leap"
+VERSION="42.2"
+ID=opensuse
+ID_LIKE="suse"
+VERSION_ID="42.2"
+PRETTY_NAME="openSUSE Leap 42.2"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:leap:42.2"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+            """,
+            "/etc/SuSE-release":"""
+openSUSE 42.2 (x86_64)
+VERSION = 42.2
+CODENAME = Malachite
+# /etc/SuSE-release is deprecated and will be removed in the future, use /etc/os-release instead
+            """
+        },
+        "platform.dist": ['SuSE', '42.2', 'x86_64'],
+        "result":{
+            "distribution": "openSUSE Leap",
+            "distribution_major_version": "42",
+            "distribution_release": "2",
+            "os_family": "Suse",
+            "distribution_version": "42.2",
+        }
+    },
+    {
         'name': 'openSUSE 13.2',
         'input': {'/etc/SuSE-release': """openSUSE 13.2 (x86_64)
 VERSION = 13.2
