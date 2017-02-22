@@ -150,7 +150,7 @@ CODENAME = Malachite
             """
         },
         "platform.dist": ['SuSE', '42.1', 'x86_64'],
-        "result":{
+        "result": {
             "distribution": "openSUSE Leap",
             "distribution_major_version": "42",
             "distribution_release": "1",
@@ -182,7 +182,7 @@ CODENAME = Malachite
             """
         },
         "platform.dist": ['SuSE', '42.2', 'x86_64'],
-        "result":{
+        "result": {
             "distribution": "openSUSE Leap",
             "distribution_major_version": "42",
             "distribution_release": "2",
@@ -213,7 +213,7 @@ CODENAME = Harlequin
             """
         },
         "platform.dist": ['SuSE', '13.2', 'x86_64'],
-        "result":{
+        "result": {
             "distribution": "openSUSE",
             "distribution_major_version": "13",
             "distribution_release": "2",
@@ -251,7 +251,7 @@ PATCHLEVEL = 3
             """
         },
         "platform.dist": ['SuSE', '11', 'x86_64'],
-        "result":{
+        "result": {
             "distribution": "SLES",
             "distribution_major_version": "11",
             "distribution_release": "3",
@@ -278,7 +278,7 @@ CPE_NAME="cpe:/o:suse:sles:11:4"
             """,
         },
         "platform.dist": ['SuSE', '11', 'x86_64'],
-        "result":{
+        "result": {
             "distribution": "SLES",
             "distribution_major_version": "11",
             "distribution_release": "4",
@@ -307,7 +307,7 @@ CPE_NAME="cpe:/o:suse:sles:12"
             """,
         },
         "platform.dist": ['SuSE', '12', 'x86_64'],
-        "result":{
+        "result": {
             "distribution": "SLES",
             "distribution_major_version": "12",
             "distribution_release": "0",
