@@ -222,23 +222,29 @@ CODENAME = Harlequin
         }
     },
     {
-        "platform.dist": [
-            "",
-            "",
-            ""
-        ],
+        "name": "openSUSE Tumbleweed 20170219",
         "input": {
-            "/etc/os-release": ("NAME=\"openSUSE Tumbleweed\"\n# VERSION=\"20160917\"\nID=opensuse\nID_LIKE=\"suse\"\nVERSION_ID=\"20160917\"\n"
-                                "PRETTY_NAME=\"openSUSE Tumbleweed\"\nANSI_COLOR=\"0;32\"\nCPE_NAME=\"cpe:/o:opensuse:tumbleweed:20160917\"\n"
-                                "BUG_REPORT_URL=\"https://bugs.opensuse.org\"\nHOME_URL=\"https://www.opensuse.org/\"\n")
+            "/etc/os-release":
+            """
+NAME="openSUSE Tumbleweed"
+# VERSION="20170219"
+ID=opensuse
+ID_LIKE="suse"
+VERSION_ID="20170219"
+PRETTY_NAME="openSUSE Tumbleweed"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:opensuse:tumbleweed:20170219"
+BUG_REPORT_URL="https://bugs.opensuse.org"
+HOME_URL="https://www.opensuse.org/"
+            """
         },
-        "name": "openSUSE Tumbleweed 20160917",
+        "platform.dist": ['', '', ''],
         "result": {
             "distribution_release": "",
             "distribution": "openSUSE Tumbleweed",
             "distribution_major_version": "NA",
             "os_family": "Suse",
-            "distribution_version": "20160917"
+            "distribution_version": "20170219"
         }
     },
     {  # see https://github.com/ansible/ansible/issues/14837
