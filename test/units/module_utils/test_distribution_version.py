@@ -345,7 +345,7 @@ CPE_NAME="cpe:/o:suse:sles:12:sp1"
             """
 SUSE Linux Enterprise Server 12 (x86_64)
 VERSION = 12
-PATCHLEVEL = 0
+PATCHLEVEL = 1
 # This file is deprecated and will be removed in a future service pack or release.
 # Please check /etc/os-release for details about this release.
             """,
