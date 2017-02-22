@@ -126,6 +126,7 @@ TESTSETS = [
             "distribution_version": "6.7"
             }
         },
+    ### openSUSE
     {
         "name" : "openSUSE Leap 42.1",
         "input": {
@@ -247,6 +248,7 @@ HOME_URL="https://www.opensuse.org/"
             "distribution_version": "20170219"
         }
     },
+    ### SUSE Linux Enterprise
     {  # see https://github.com/ansible/ansible/issues/14837
         "name": "SLES 11.3",
         "input": {
