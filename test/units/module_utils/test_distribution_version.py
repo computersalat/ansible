@@ -191,13 +191,10 @@ CODENAME = Malachite
         }
     },
     {
-        'name': 'openSUSE 13.2',
-        'input': {'/etc/SuSE-release': """openSUSE 13.2 (x86_64)
-VERSION = 13.2
-CODENAME = Harlequin
-# /etc/SuSE-release is deprecated and will be removed in the future, use /etc/os-release instead
-""",
-                  '/etc/os-release': """NAME=openSUSE
+        "name" : "openSUSE 13.2",
+        "input": {
+            "/etc/os-release":
+            """
 VERSION="13.2 (Harlequin)"
 VERSION_ID="13.2"
 PRETTY_NAME="openSUSE 13.2 (Harlequin) (x86_64)"
@@ -207,13 +204,22 @@ CPE_NAME="cpe:/o:opensuse:opensuse:13.2"
 BUG_REPORT_URL="https://bugs.opensuse.org"
 HOME_URL="https://opensuse.org/"
 ID_LIKE="suse"
-"""},
-        'platform.dist': ('SuSE', '13.2', 'x86_64'),
-        'result': {'distribution': u'openSUSE',
-                   'distribution_major_version': u'13',
-                   'distribution_release': u'2',
-                   'os_family': u'Suse',
-                   'distribution_version': u'13.2'}
+            """,
+            "/etc/SuSE-release":"""
+openSUSE 13.2 (x86_64)
+VERSION = 13.2
+CODENAME = Harlequin
+# /etc/SuSE-release is deprecated and will be removed in the future, use /etc/os-release instead
+            """
+        },
+        "platform.dist": ['SuSE', '13.2', 'x86_64'],
+        "result":{
+            "distribution": "openSUSE",
+            "distribution_major_version": "13",
+            "distribution_release": "2",
+            "os_family": "Suse",
+            "distribution_version": "13.2",
+        }
     },
     {
         "platform.dist": [
