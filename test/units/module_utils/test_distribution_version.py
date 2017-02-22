@@ -252,7 +252,8 @@ HOME_URL="https://www.opensuse.org/"
     {  # see https://github.com/ansible/ansible/issues/14837
         "name": "SLES 11.3",
         "input": {
-            "/etc/SuSE-release":"""
+            "/etc/SuSE-release":
+            """
 SUSE Linux Enterprise Server 11 (x86_64)
 VERSION = 11
 PATCHLEVEL = 3
@@ -270,12 +271,14 @@ PATCHLEVEL = 3
     {  # see https://github.com/ansible/ansible/issues/14837
         "name": "SLES 11.4",
         "input": {
-            "/etc/SuSE-release":"""
+            "/etc/SuSE-release":
+            """
 SUSE Linux Enterprise Server 11 (x86_64)
 VERSION = 11
 PATCHLEVEL = 4
             """,
-            "/etc/os-release":"""
+            "/etc/os-release":
+            """
 NAME="SLES"
 VERSION="11.4"
 VERSION_ID="11.4"
@@ -297,14 +300,8 @@ CPE_NAME="cpe:/o:suse:sles:11:4"
     {  # see https://github.com/ansible/ansible/issues/14837
         "name": "SLES 12 SP0",
         "input": {
-            "/etc/SuSE-release":"""
-SUSE Linux Enterprise Server 12 (x86_64)
-VERSION = 12
-PATCHLEVEL = 0
-# This file is deprecated and will be removed in a future service pack or release.
-# Please check /etc/os-release for details about this release.
-            """,
-            "/etc/os-release":"""
+            "/etc/os-release":
+            """
 NAME="SLES"
 VERSION="12"
 VERSION_ID="12"
@@ -312,6 +309,14 @@ PRETTY_NAME="SUSE Linux Enterprise Server 12"
 ID="sles"
 ANSI_COLOR="0;32"
 CPE_NAME="cpe:/o:suse:sles:12"
+            """,
+            "/etc/SuSE-release":
+            """
+SUSE Linux Enterprise Server 12 (x86_64)
+VERSION = 12
+PATCHLEVEL = 0
+# This file is deprecated and will be removed in a future service pack or release.
+# Please check /etc/os-release for details about this release.
             """,
         },
         "platform.dist": ['SuSE', '12', 'x86_64'],
@@ -323,18 +328,11 @@ CPE_NAME="cpe:/o:suse:sles:12"
             "distribution_version": "12",
         }
     },
-
     {  # see https://github.com/ansible/ansible/issues/14837
         "name": "SLES 12 SP1",
         "input": {
-            "/etc/SuSE-release":"""
-SUSE Linux Enterprise Server 12 (x86_64)
-VERSION = 12
-PATCHLEVEL = 0
-# This file is deprecated and will be removed in a future service pack or release.
-# Please check /etc/os-release for details about this release.
-            """,
-            "/etc/os-release":"""
+            "/etc/os-release":
+            """
 NAME="SLES"
 VERSION="12-SP1"
 VERSION_ID="12.1"
@@ -342,6 +340,14 @@ PRETTY_NAME="SUSE Linux Enterprise Server 12 SP1"
 ID="sles"
 ANSI_COLOR="0;32"
 CPE_NAME="cpe:/o:suse:sles:12:sp1"
+            """,
+            "/etc/SuSE-release":
+            """
+SUSE Linux Enterprise Server 12 (x86_64)
+VERSION = 12
+PATCHLEVEL = 0
+# This file is deprecated and will be removed in a future service pack or release.
+# Please check /etc/os-release for details about this release.
             """,
         },
         "platform.dist": ['SuSE', '12', 'x86_64'],
