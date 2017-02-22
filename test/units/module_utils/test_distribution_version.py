@@ -359,6 +359,37 @@ PATCHLEVEL = 1
             "distribution_version": "12.1",
         }
     },
+    {  # see https://github.com/ansible/ansible/issues/14837
+        "name": "SLES 12 SP2",
+        "input": {
+            "/etc/os-release":
+            """
+NAME="SLES"
+VERSION="12-SP2"
+VERSION_ID="12.2"
+PRETTY_NAME="SUSE Linux Enterprise Server 12 SP2"
+ID="sles"
+ANSI_COLOR="0;32"
+CPE_NAME="cpe:/o:suse:sles:12:sp2"
+            """,
+            "/etc/SuSE-release":
+            """
+SUSE Linux Enterprise Server 12 (x86_64)
+VERSION = 12
+PATCHLEVEL = 2
+# This file is deprecated and will be removed in a future service pack or release.
+# Please check /etc/os-release for details about this release.
+            """,
+        },
+        "platform.dist": ['SuSE', '12', 'x86_64'],
+        "result":{
+            "distribution": "SLES",
+            "distribution_major_version": "12",
+            "distribution_release": "2",
+            "os_family": "Suse",
+            "distribution_version": "12.2",
+        }
+    },
 
     {
         "name": "Debian stretch/sid",
